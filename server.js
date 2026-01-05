@@ -66,11 +66,9 @@ fs.readdirSync(routesPath).forEach((file) => {
 console.log('🎯 All routes loaded successfully');
 
 app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Alumni Backend Running 🚀"
-  });
+  res.status(200).send("Alumni Backend is Running 🚀");
 });
+
 
 app.listen(PORT, () =>
   console.log(`Server running at: ${process.env.BASE_URL || `http://localhost:${PORT}`}`)
