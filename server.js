@@ -21,7 +21,13 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://useralumni-frontend.vercel.app",
+    "https://adminalumni-frontend.vercel.app"
+  ],
+  credentials: true
+}));
 
 const options = {
   definition: {
