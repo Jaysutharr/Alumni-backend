@@ -1,0 +1,10 @@
+{
+    "local": {
+      "accessTokenJwtExpiry": "1d",
+    "accessTokenJwtSecret":"agadminaccesstoken",
+    "refreshTokenJwtSecret":"agadminrefreshtoken",
+    "refreshTokenJwtExpiry":"7d"
+    }
+ 
+  }
+  
